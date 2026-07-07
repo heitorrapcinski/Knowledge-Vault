@@ -17,7 +17,7 @@ Knowledge Vault/
 
 ├── Books/
 ├── Concepts/
-├── Permanent Notes/
+├── Knowledge/
 ├── Frameworks/
 ├── Patterns/
 ├── Battle Cards/
