@@ -1,5 +1,6 @@
 # 🧠 Engineering Knowledge Vault
 
+> [!info]
 > Uma base de conhecimento viva sobre Arquitetura de Software, Arquitetura Corporativa, Cloud, IA e Engenharia de Software, construída com Obsidian e evoluída continuamente com apoio de Inteligência Artificial.
 
 ## Objetivo
@@ -13,20 +14,55 @@ Em vez de armazenar apenas resumos, o objetivo é construir uma base de conhecim
 ## Estrutura
 
 ```text
-Knowledge Vault/
-
+Engineering Knowledge Vault/
 ├── Books/
+	├── <<Nome do Livro>>/
+		├── <<Nome do Livro>> - 00 - Index.md
+		├── <<Nome do Livro>> - 01 - Chapter 01.md
+		├── <<Nome do Livro>> - 99 - Chapter N.md
 ├── Concepts/
 ├── Knowledge/
-├── Frameworks/
-├── Patterns/
-├── Battle Cards/
-├── Flashcards/
-├── Diagrams/
-├── Templates/
 ├── References/
 └── Glossary/
 ```
+
+### Conteúdo 
+
+Cada conteúdo é produzido como notas em **Markdown**, prontas para serem lidas pelo Obsidian. Todo o conteúdo deve ser compatível com: 
+
+* Markdown puro 
+* Obsidian 
+* Mermaid 
+* Links internos (`[[...]]`) 
+* Callouts 
+* Frontmatter YAML
+
+### Frontmatter
+
+Todas as notas devem iniciar com:
+
+```
+yaml
+---
+title:
+aliases:
+tags:
+type:
+status:
+source:
+author:
+created:
+---
+```
+
+### Capítulo de Livro
+
+Criar uma nota do capítulo contendo: 
+* Resumo executivo 
+* Principais ideias 
+* Conceitos apresentados 
+* Exemplos 
+* Referências para outras notas
 
 ---
 
