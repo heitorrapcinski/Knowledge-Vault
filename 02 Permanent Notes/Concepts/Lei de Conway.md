@@ -9,6 +9,7 @@ type: concept
 aliases:
   - Conway's Law
 ---
+
 > [!quote]
 > **"Organizações projetam sistemas que refletem sua estrutura de comunicação."**
 >
