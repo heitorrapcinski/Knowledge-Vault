@@ -1,6 +1,11 @@
 ---
 chapter: 3
-tags: [methodology, activities, execution]
+tags:
+  - methodology
+  - activities
+  - execution
+aliases:
+  - "Parte 3: Atividades da Lean Inception"
 ---
 ## Parte 3: Atividades da Lean Inception
 

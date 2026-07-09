@@ -1,6 +1,11 @@
 ---
 chapter: 2
-tags: [facilitation, workshop, agile]
+tags:
+  - facilitation
+  - workshop
+  - agile
+aliases:
+  - "Parte 2: Preparando-se para o Workshop"
 ---
 ## Parte 2: Preparando-se para o Workshop
 

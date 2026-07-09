@@ -1,6 +1,11 @@
 ---
 chapter: 1
-tags: [mvp, lean-startup, foundation]
+tags:
+  - mvp
+  - lean-startup
+  - foundation
+aliases:
+  - "Parte 1: Construindo o Produto Certo"
 ---
 ## Parte 1: Construindo o Produto Certo
 
