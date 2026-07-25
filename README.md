@@ -333,7 +333,7 @@ flowchart LR
 
 ## Estado Atual
 
-**377 notas permanentes** (311 Concepts + 66 Practices), organizadas em seis clusters temáticos:
+**438 notas permanentes** (372 Concepts + 66 Practices), organizadas em sete clusters temáticos:
 
 | Cluster | Notas | Estado |
 |---|---:|---|
@@ -342,6 +342,7 @@ flowchart LR
 | **Lean Inception** | 24 | Completo — literatura (Paulo Caroli), 13 práticas de workshop, conceitos, MOC e estudo de caso |
 | **System Design e Sistemas Distribuídos** | 99 | Cluster mais recente — fundamentos (falhas independentes, consistência, consenso), distribuição de dados e tráfego, estilos de API e protocolos, segurança e identidade, cache e mensageria, resiliência, contêineres e Kubernetes, Cloud Native e observabilidade, mais o substrato de rede (OSI, TCP/UDP, DNS, VPC) e sistema operacional, concorrência e evolução arquitetural |
 | **AWS Serverless e SaaS Multi-Tenant** | 39 | Cluster mais recente — arquitetura canônica de produto SaaS sobre AWS serverless: serviços (Lambda, API Gateway, DynamoDB, Cognito, EventBridge, SQS, SNS, S3, CloudFront, Athena, CloudWatch, CDK), padrões (multi-tenancy, Single-Table Design, CDC, URL pré-assinada, cold start, hexagonal), camada PWA (service worker, cache, push, estado de servidor, fatias de funcionalidade) e governança (versionamento em três camadas, FinOps) |
+| **OpenStack e Nuvem Privada** | 61 | Cluster mais recente — engenharia de nuvem privada IaaS a partir de *Mastering OpenStack* (Khedher, 2024): os serviços do ecossistema (Nova, Neutron, Keystone, Cinder, Swift, Manila, Glance, Placement, Horizon, Ceilometer/Gnocchi/Aodh, Magnum, Zun, Ironic, Octavia, Masakari, Watcher, Rally, OSProfiler, Kolla-Ansible), o substrato neutro (IaaS, control plane, hipervisor, flavor, overcommit, capacity planning), segregação e agendamento (AZ, host aggregate, cells, afinidade), disponibilidade (Galera, quorum queue, VRRP, DVR), rede definida por software (OVS, OVN, VXLAN, BGP) e estratégia de nuvem (híbrida, multi-cloud, bursting, lock-in) |
 | **IA Generativa e Agentes** | 23 | Núcleo maduro (LLM, RAG, GraphRAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) ampliado pela camada de IA do ITIL 5 (Agentic AI, AI Capability Model, AI Governance, AIOps, Human-in-the-Loop) e pela camada multiagente (Multi-Agent Systems, hierarquia, especialistas, paralelos, ferramentas compartilhadas) |
 
 > [!info] Contagem por cluster é aproximada
@@ -354,6 +355,7 @@ flowchart LR
 - [[Lean Inception MOC]] — workshop de definição de MVP
 - [[System Design MOC]] — sistemas distribuídos em dez eixos, do substrato de rede e sistema operacional à operação em produção
 - [[AWS Serverless Architecture MOC]] — arquitetura canônica de SaaS multi-tenant sobre AWS serverless com frontend PWA, em oito eixos
+- [[OpenStack MOC]] — nuvem privada IaaS em nove eixos, dos fundamentos e serviços do ecossistema à estratégia de nuvem híbrida
 
 ### Em construção
 
