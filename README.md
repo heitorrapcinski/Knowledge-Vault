@@ -91,13 +91,13 @@ Knowledge-Vault/
 
 Cinco tipos, declarados no campo `type` do frontmatter:
 
-| `type` | Pasta | Propósito |
-|---|---|---|
-| `literature` | 01 Literature | Registro de leitura de um capítulo ou obra |
-| `concept` | 02/Concepts | Um conceito atômico: o que é, como funciona, como se relaciona |
-| `practice` | 02/Practices | Uma técnica ou atividade: passos, regras, template |
-| `moc` | 03 MOCs | Mapa de navegação de um domínio |
-| `project` | 04 Projects | Estudo de caso ou aplicação prática |
+| `type`       | Pasta         | Propósito                                                      |
+| ------------ | ------------- | -------------------------------------------------------------- |
+| `literature` | 01 Literature | Registro de leitura de um capítulo ou obra                     |
+| `concept`    | 02/Concepts   | Um conceito atômico: o que é, como funciona, como se relaciona |
+| `practice`   | 02/Practices  | Uma técnica ou atividade: passos, regras, template             |
+| `moc`        | 03 MOCs       | Mapa de navegação de um domínio                                |
+| `project`    | 04 Projects   | Estudo de caso ou aplicação prática                            |
 
 E três estados de maturidade, no campo `status`:
 
