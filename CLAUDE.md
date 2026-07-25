@@ -143,8 +143,22 @@ Convenção semântica escopada no vault (detalhes no README):
 
 Um commit por unidade de conhecimento. Cluster novo é um commit; normalização de whitespace é outro. **Nunca misturados.**
 
-> [!warning] Git neste repositório
-> O repositório fica em pasta montada. O git pode deixar `.git/index.lock` e `.git/HEAD.lock` presos após uma operação. Se aparecer *"Another git process seems to be running"*, remova os arquivos `.lock` órfãos antes de tentar de novo.
+### Quem pode executar git
+
+O comportamento depende de **onde o agente está rodando** — verifique antes de executar qualquer comando git.
+
+| Agente rodando | Git |
+|---|---|
+| **No computador do autor** (Cowork local, Claude Code, terminal) | Pode executar normalmente, seguindo as convenções acima. `push` continua exigindo pedido explícito |
+| **Na nuvem, através da ponte remota** | **Não execute nenhum comando git neste repositório** |
+
+> [!warning] Por que o agente remoto não pode usar git aqui
+> A ponte remota permite criar, ler e mover arquivos, mas **bloqueia deletar** — é uma proteção do mecanismo, não uma configuração. O git depende de apagar seus próprios arquivos `.lock` ao final de cada operação de escrita. Esse passo falha silenciosamente e o lock fica preso, travando o Git do editor do autor com *"Another git process seems to be running"*.
+>
+> **O que o agente remoto faz no lugar:** escreve os arquivos, atualiza o `CHANGELOG.md` e entrega a mensagem de commit pronta para o autor executar.
+
+> [!tip] Recuperação de lock preso
+> Apagar `.git/*.lock` e `.git/objects/*.lock` com o repositório fechado no editor. Nenhum trabalho é perdido — os locks são arquivos vazios de controle.
 
 ---
 
