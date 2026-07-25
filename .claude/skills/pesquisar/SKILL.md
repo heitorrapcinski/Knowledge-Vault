@@ -1,9 +1,12 @@
 ---
-description: Pesquisa um tema na internet e produz notas rastreáveis no vault, com fontes primárias e verificação cruzada
+name: pesquisar
+description: Pesquisa um tema na internet com fontes primárias e verificação cruzada, e produz notas rastreáveis no Knowledge Vault. Use quando o autor pedir para pesquisar, investigar ou buscar informação atual sobre um tema para incorporar ao vault.
 argument-hint: <tema a pesquisar>
 ---
 
-Pesquise o tema na internet e incorpore o resultado ao Knowledge Vault, seguindo o **Fluxo B** do `CLAUDE.md`.
+# Pesquisar um tema
+
+Pesquise na internet e incorpore o resultado ao Knowledge Vault seguindo o **Fluxo B** do `CLAUDE.md`.
 
 **Tema:** $ARGUMENTS
 

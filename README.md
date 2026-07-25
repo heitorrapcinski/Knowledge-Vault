@@ -1,4 +1,4 @@
-## 🧠 Engineering Knowledge Vault
+# 🧠 Engineering Knowledge Vault
 
 > [!info]
 > Base de conhecimento viva sobre **Arquitetura de Software, Arquitetura Corporativa, Cloud, IA Generativa e Engenharia de Software**, construída em Obsidian e evoluída continuamente com apoio de Inteligência Artificial.
@@ -91,13 +91,13 @@ Knowledge-Vault/
 
 Cinco tipos, declarados no campo `type` do frontmatter:
 
-| `type`       | Pasta         | Propósito                                                      |
-| ------------ | ------------- | -------------------------------------------------------------- |
-| `literature` | 01 Literature | Registro de leitura de um capítulo ou obra                     |
-| `concept`    | 02/Concepts   | Um conceito atômico: o que é, como funciona, como se relaciona |
-| `practice`   | 02/Practices  | Uma técnica ou atividade: passos, regras, template             |
-| `moc`        | 03 MOCs       | Mapa de navegação de um domínio                                |
-| `project`    | 04 Projects   | Estudo de caso ou aplicação prática                            |
+| `type` | Pasta | Propósito |
+|---|---|---|
+| `literature` | 01 Literature | Registro de leitura de um capítulo ou obra |
+| `concept` | 02/Concepts | Um conceito atômico: o que é, como funciona, como se relaciona |
+| `practice` | 02/Practices | Uma técnica ou atividade: passos, regras, template |
+| `moc` | 03 MOCs | Mapa de navegação de um domínio |
+| `project` | 04 Projects | Estudo de caso ou aplicação prática |
 
 E três estados de maturidade, no campo `status`:
 
@@ -364,20 +364,22 @@ O vault é mantido com apoio de agentes de IA operando sob um protocolo fixo, ve
 CLAUDE.md                    # Protocolo de trabalho: o que ler, em que ordem, como validar
 CHANGELOG.md                 # Histórico datado de tudo que entrou no vault
 .claude/
-├── commands/                # Fluxos prontos, disparáveis por nome
-│   ├── estudar.md
-│   ├── pesquisar.md
-│   ├── auditar.md
-│   └── conectar.md
+├── skills/                  # Fluxos prontos, disparáveis por nome
+│   ├── estudar/SKILL.md
+│   ├── pesquisar/SKILL.md
+│   ├── auditar/SKILL.md
+│   └── conectar/SKILL.md
 └── scripts/
     └── audit.py             # Diagnóstico de saúde do grafo
 ```
 
 **A divisão é deliberada:** este README é a fonte única das *convenções* (o que é uma nota boa). O `CLAUDE.md` define o *processo* (como chegar até ela). Mudou a convenção aqui, mudou o comportamento do agente — sem duas fontes de verdade para manter em sincronia.
 
-### Comandos
+### Skills
 
-| Comando | Fluxo |
+Ficam em `.claude/skills/<nome>/SKILL.md` — formato reconhecido tanto pelo Cowork quanto pelo Claude Code, e descoberto automaticamente ao abrir a pasta.
+
+| Skill | Fluxo |
 |---|---|
 | `/estudar <fonte>` | Lê um livro, artigo ou documento → notas de literatura, conceitos e conexões |
 | `/pesquisar <tema>` | Pesquisa na web com fontes primárias e verificação cruzada → notas rastreáveis |

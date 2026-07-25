@@ -175,13 +175,16 @@ Interrompa e consulte o autor quando:
 
 ---
 
-## 9. Comandos disponíveis
+## 9. Skills disponíveis
 
-| Comando | O que faz |
+| Skill | O que faz |
 |---|---|
 | `/estudar <fonte>` | Fluxo A — lê uma fonte e produz literatura + conceitos + conexões |
 | `/pesquisar <tema>` | Fluxo B — pesquisa na web e produz notas rastreáveis |
 | `/auditar` | Diagnóstico de saúde do vault e plano de correção priorizado |
 | `/conectar [cluster]` | Procura e cria pontes entre clusters isolados |
 
-Definições em `.claude/commands/`.
+Definições em `.claude/skills/<nome>/SKILL.md`.
+
+> [!important] Skills, não commands
+> Este é o formato reconhecido tanto pelo **Cowork** quanto pelo **Claude Code**. O caminho legado `.claude/commands/*.md` funciona apenas no Claude Code — o Cowork o ignora. Ao criar um fluxo novo, use sempre `.claude/skills/`.

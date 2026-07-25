@@ -1,15 +1,18 @@
 ---
-description: Procura e cria pontes entre clusters isolados do vault, transformando ilhas temáticas em rede
+name: conectar
+description: Procura e cria pontes entre clusters isolados do Knowledge Vault, resolvendo notas órfãs e transformando ilhas temáticas em rede. Use quando o autor pedir para conectar notas, resolver órfãs, criar links entre domínios ou melhorar o grafo do vault.
 argument-hint: "[cluster de origem — opcional, padrão: todos]"
 ---
+
+# Conectar clusters
 
 Procure conexões que deveriam existir no Knowledge Vault e ainda não existem.
 
 **Escopo:** $ARGUMENTS (vazio = todos os clusters)
 
-## Por que este comando existe
+## Por que esta skill existe
 
-O valor de um Zettelkasten está nas conexões, não nas notas. Um vault cujos domínios não se tocam é um conjunto de resumos organizados — não uma rede de conhecimento. Este comando ataca especificamente o isolamento entre clusters.
+O valor de um Zettelkasten está nas conexões, não nas notas. Um vault cujos domínios não se tocam é um conjunto de resumos organizados — não uma rede de conhecimento. Esta skill ataca especificamente o isolamento entre clusters.
 
 ## Execução
 

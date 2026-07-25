@@ -1,9 +1,12 @@
 ---
-description: Diagnostica a saúde do vault (órfãs, links quebrados, frontmatter, tags) e propõe um plano de correção priorizado
+name: auditar
+description: Diagnostica a saúde do Knowledge Vault — notas órfãs, links quebrados, conformidade de frontmatter, vocabulário e tags — e propõe um plano de correção priorizado. Use quando o autor pedir auditoria, diagnóstico, verificação de consistência ou estado de saúde do vault.
 argument-hint: "[cluster ou pasta a auditar — opcional, padrão: vault inteiro]"
 ---
 
-Audite a saúde do Knowledge Vault e proponha um plano de correção.
+# Auditar o vault
+
+Diagnostique a saúde do Knowledge Vault e proponha um plano de correção.
 
 **Escopo:** $ARGUMENTS (vazio = vault inteiro)
 

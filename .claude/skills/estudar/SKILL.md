@@ -1,9 +1,12 @@
 ---
-description: Estuda uma fonte (livro, artigo, documento) e produz notas de literatura, conceitos e conexões no vault
-argument-hint: <caminho do arquivo, título da obra ou tema já disponível no contexto>
+name: estudar
+description: Estuda uma fonte (livro, artigo, documento) e incorpora o conhecimento ao Knowledge Vault, produzindo notas de literatura, conceitos atômicos e conexões. Use quando o autor pedir para estudar, ler, processar ou extrair conhecimento de um material específico.
+argument-hint: <caminho do arquivo, título da obra ou material já disponível no contexto>
 ---
 
-Estude a fonte indicada e incorpore o conhecimento dela ao Knowledge Vault, seguindo o **Fluxo A** do `CLAUDE.md`.
+# Estudar uma fonte
+
+Incorpore o conhecimento da fonte ao Knowledge Vault seguindo o **Fluxo A** do `CLAUDE.md`.
 
 **Fonte:** $ARGUMENTS
 
@@ -22,6 +25,7 @@ Estude a fonte indicada e incorpore o conhecimento dela ao Knowledge Vault, segu
    - *já existe* → enriquecer a nota atual, preservando o que está lá
    - *novo e atômico* → criar nota em `Concepts/` ou `Practices/`
    - *sem valor fora da fonte* → fica apenas na nota de literatura
+
    Procure por nome de arquivo **e** por `aliases` antes de decidir que algo é novo.
 3. **Notas permanentes.** Um conceito por nota, na anatomia correta do tipo.
 4. **Registro no MOC** do domínio, no mesmo passo.
