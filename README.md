@@ -333,26 +333,34 @@ flowchart LR
 
 ## Estado Atual
 
-**63 notas permanentes**, organizadas em quatro clusters temáticos:
+**234 notas permanentes** (185 Concepts + 49 Practices), organizadas em quatro clusters temáticos:
 
 | Cluster | Notas | Estado |
 |---|---:|---|
+| **ITIL (Version 5)** | ~180 | Cluster mais denso do vault — fundamentos, valor e cocriação, relacionamentos, experiência, estratégia, quatro dimensões, Product and Service Lifecycle, ITIL Value System, 7 princípios, fluxos de valor, as 34 práticas de gestão e governança de IA |
 | **Cloud, Dados e Resiliência** | 24 | Denso e internamente coerente — Storage (Block/File/Object), DR/BC/RPO/RTO, Data Lake/Warehouse/ETL/ELT, padrões distribuídos |
 | **Lean Inception** | 24 | Completo — literatura (Paulo Caroli), 13 práticas de workshop, conceitos, MOC e estudo de caso |
-| **IA Generativa e Agentes** | 9 | Núcleo maduro (LLM, RAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) — faltam as notas da camada multiagente |
-| **ITIL e Service Management** | 6 | Em construção inicial — MOC estruturado, notas fundacionais em andamento |
+| **IA Generativa e Agentes** | 17 | Núcleo maduro (LLM, RAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) ampliado pela camada de IA do ITIL 5 (Agentic AI, AI Capability Model, AI Governance, AIOps, Human-in-the-Loop) — faltam as notas restantes da camada multiagente |
+
+> [!info] Contagem por cluster é aproximada
+> Notas-ponte pertencem a mais de um cluster por desenho. `Team Topologies` conta em ITIL e em arquitetura; `Agentic AI`, em ITIL e em IA.
 
 ### Maps of Content
 
 - [[AI Generative Architecture]] — arquiteturas de IA em cinco camadas: raciocínio, conhecimento, contexto, execução e colaboração
-- [[ITIL 5]] — governança e gestão de produtos e serviços digitais
+- [[ITIL 5]] — gestão de produtos e serviços digitais, alinhado à publicação ITIL Foundation (Version 5)
 - [[Lean Inception MOC]] — workshop de definição de MVP
 
 ### Em construção
 
-- Camada multiagente do cluster de IA: `Hierarquia de Agentes`, `Agentes Especialistas`, `Agentes Paralelos`, `Human-in-the-Loop`, `Ferramentas Compartilhadas`
-- Fundações do ITIL: `Service Value System`, `Product and Service Management`, conceitos de valor e serviço
-- Pontes entre clusters: arquitetura ↔ organização (Conway, Team Topologies), IA ↔ gestão do conhecimento
+- Camada multiagente do cluster de IA: `Hierarquia de Agentes`, `Agentes Especialistas`, `Agentes Paralelos`, `Ferramentas Compartilhadas`, `Multi-Agent Systems`
+- Curadoria humana das notas do cluster ITIL: todas nasceram em `status: growing` e aguardam revisão para `evergreen`
+- Padronização do frontmatter das notas antigas dos clusters Cloud e Lean Inception (faltam `source` e `author` em ~40 notas)
+- Notas de literatura do ITIL, a serem escritas **após** a leitura das publicações da Versão 5
+
+### Convenção de desambiguação
+
+Quando o nome canônico de um conceito é uma palavra genérica que colidiria com outras notas, o escopo entra entre parênteses: `Discover (Lifecycle)`, `Build (Lifecycle)`. O termo puro fica em `aliases`. É uma extensão da regra de siglas descrita em [Nomenclatura de arquivos](#3-nomenclatura-de-arquivos).
 ---
 > [!quote]
 > **Livros são temporários. Conceitos são permanentes. Conhecimento conectado gera valor.**

@@ -1,9 +1,16 @@
 ---
 title: Digital Organization
+aliases:
+  - Organização Digital
 tags:
+  - itil
   - digital-transformation
   - organization
-status: permanent
+type: concept
+status: evergreen
+source: ITIL Foundation (Version 5), PeopleCert, 2026
+author: PeopleCert
+created: 2026-07-24
 ---
 > [!abstract]
 > Uma Digital Organization utiliza tecnologia como elemento central para criar, entregar e evoluir produtos e serviços digitais.

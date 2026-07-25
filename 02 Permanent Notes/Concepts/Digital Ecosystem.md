@@ -1,9 +1,16 @@
 ---
 title: Digital Ecosystem
+aliases:
+  - Ecossistema Digital
 tags:
+  - itil
   - ecosystem
   - digital
-status: permanent
+type: concept
+status: evergreen
+source: ITIL Foundation (Version 5), PeopleCert, 2026
+author: PeopleCert
+created: 2026-07-24
 ---
 > [!abstract]
 > Um Ecossistema Digital é uma rede de organizações, plataformas, parceiros, consumidores e tecnologias que colaboram para gerar valor.

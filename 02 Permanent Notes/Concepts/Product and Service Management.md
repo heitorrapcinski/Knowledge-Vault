@@ -1,9 +1,17 @@
 ---
 title: Product and Service Management
+aliases:
+  - Gestão de Produtos e Serviços
 tags:
+  - itil
   - product
   - service
-status: permanent
+  - management
+type: concept
+status: evergreen
+source: ITIL Foundation (Version 5), PeopleCert, 2026
+author: PeopleCert
+created: 2026-07-24
 ---
 > [!abstract]
 > Product and Service Management integra a gestão de produtos e serviços para maximizar a geração contínua de valor durante todo o ciclo de vida.

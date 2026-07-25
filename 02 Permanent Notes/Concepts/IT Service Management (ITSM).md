@@ -2,10 +2,16 @@
 title: IT Service Management (ITSM)
 aliases:
   - ITSM
+  - Gestão de Serviços de TI
 tags:
   - itil
   - itsm
-status: permanent
+  - service-management
+type: concept
+status: evergreen
+source: ITIL Foundation (Version 5), PeopleCert, 2026
+author: PeopleCert
+created: 2026-07-24
 ---
 > [!abstract]
 > ITSM é a disciplina dedicada ao planejamento, entrega, operação e melhoria de serviços de TI, utilizando processos, práticas e governança para gerar valor aos consumidores.

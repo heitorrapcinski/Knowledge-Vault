@@ -1,8 +1,15 @@
 ---
 title: Service Management
+aliases:
+  - Gestão de Serviços
 tags:
+  - itil
   - service-management
-status: permanent
+type: concept
+status: evergreen
+source: ITIL Foundation (Version 5), PeopleCert, 2026
+author: PeopleCert
+created: 2026-07-24
 ---
 > [!abstract]
 > Service Management é o conjunto de capacidades organizacionais utilizadas para projetar, entregar, operar e melhorar serviços de forma contínua.

@@ -2,10 +2,16 @@
 title: ITIL
 aliases:
   - Information Technology Infrastructure Library
+  - ITIL 5
+  - ITIL Version 5
 tags:
   - itil
   - framework
-status: permanent
+  - service-management
+type: concept
+status: evergreen
+source: ITIL Foundation (Version 5), PeopleCert, 2026
+author: PeopleCert
 created: 2026-07-24
 ---
 > [!abstract]
