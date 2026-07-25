@@ -273,16 +273,16 @@ Base de tudo. O frontmatter torna cada nota consultável por `type`, `status` e 
 
 Usados com semântica consistente, não decorativa:
 
-| Callout | Uso no vault |
-|---|---|
-| `> [!abstract]` | Definição de abertura da nota |
-| `> [!info]` | Esclarecimento factual |
-| `> [!tip]` | Recomendação prática |
-| `> [!important]` | Distinção que costuma ser confundida |
-| `> [!warning]` | Armadilha, risco ou anti-padrão |
-| `> [!quote]` | Citação literal da fonte |
-| `> [!question]` | Lacuna aberta, pergunta de pesquisa |
-| `> [!success]` | Leitura ou interpretação própria sobre o tema |
+| Callout          | Uso no vault                                  |
+| ---------------- | --------------------------------------------- |
+| `> [!abstract]`  | Definição de abertura da nota                 |
+| `> [!info]`      | Esclarecimento factual                        |
+| `> [!tip]`       | Recomendação prática                          |
+| `> [!important]` | Distinção que costuma ser confundida          |
+| `> [!warning]`   | Armadilha, risco ou anti-padrão               |
+| `> [!quote]`     | Citação literal da fonte                      |
+| `> [!question]`  | Lacuna aberta, pergunta de pesquisa           |
+| `> [!success]`   | Leitura ou interpretação própria sobre o tema |
 
 ### Mermaid
 
@@ -353,67 +353,6 @@ flowchart LR
 - Camada multiagente do cluster de IA: `Hierarquia de Agentes`, `Agentes Especialistas`, `Agentes Paralelos`, `Human-in-the-Loop`, `Ferramentas Compartilhadas`
 - Fundações do ITIL: `Service Value System`, `Product and Service Management`, conceitos de valor e serviço
 - Pontes entre clusters: arquitetura ↔ organização (Conway, Team Topologies), IA ↔ gestão do conhecimento
-
 ---
-
-## Trabalhando com Agentes de IA
-
-O vault é mantido com apoio de agentes de IA operando sob um protocolo fixo, versionado junto com o conteúdo:
-
-```text
-CLAUDE.md                    # Protocolo de trabalho: o que ler, em que ordem, como validar
-CHANGELOG.md                 # Histórico datado de tudo que entrou no vault
-.claude/
-├── skills/                  # Fluxos prontos, disparáveis por nome
-│   ├── estudar/SKILL.md
-│   ├── pesquisar/SKILL.md
-│   ├── auditar/SKILL.md
-│   └── conectar/SKILL.md
-└── scripts/
-    └── audit.py             # Diagnóstico de saúde do grafo
-```
-
-**A divisão é deliberada:** este README é a fonte única das *convenções* (o que é uma nota boa). O `CLAUDE.md` define o *processo* (como chegar até ela). Mudou a convenção aqui, mudou o comportamento do agente — sem duas fontes de verdade para manter em sincronia.
-
-### Skills
-
-Ficam em `.claude/skills/<nome>/SKILL.md` — formato reconhecido tanto pelo Cowork quanto pelo Claude Code, e descoberto automaticamente ao abrir a pasta.
-
-| Skill | Fluxo |
-|---|---|
-| `/estudar <fonte>` | Lê um livro, artigo ou documento → notas de literatura, conceitos e conexões |
-| `/pesquisar <tema>` | Pesquisa na web com fontes primárias e verificação cruzada → notas rastreáveis |
-| `/auditar` | Diagnostica órfãs, links quebrados, frontmatter e tags → plano de correção priorizado |
-| `/conectar` | Procura e cria pontes entre clusters isolados |
-
-### Auditoria
-
-```bash
-python3 .claude/scripts/audit.py
-```
-
-O objetivo **não** é zerar os números. Link quebrado dentro de um cluster em construção declarada é sinalização da próxima nota a escrever. O que a auditoria protege é contra **regressão**: nenhuma alteração deve criar órfãs novas nem espalhar links quebrados para fora do cluster ativo.
-
----
-
-## Convenções de Git
-
-O repositório é a garantia de durabilidade do vault. Convenções em uso:
-
-- **Commits semânticos**, escopados no vault:
-  - `feat(vault):` — notas novas ou clusters novos
-  - `docs(vault):` — enriquecimento de notas existentes
-  - `refactor(vault):` — renomear, mover ou reorganizar notas
-  - `fix(vault):` — corrigir links quebrados, frontmatter, tipografia
-  - `chore(vault):` — configuração, whitespace, manutenção
-- **Um commit por unidade de conhecimento.** Um cluster novo é um commit; normalização de whitespace é outro. Nunca misturados.
-- **Todo commit de conteúdo atualiza o [CHANGELOG.md](CHANGELOG.md).**
-- **`.obsidian/` fica fora do versionamento** — configuração local de workspace não é conhecimento. Já `.claude/` **é versionado**: o protocolo dos agentes faz parte do projeto.
-
----
-
-<div align="center">
-
-**Livros são temporários. Conceitos são permanentes. Conhecimento conectado gera valor.**
-
-</div>
+> [!quote]
+> **Livros são temporários. Conceitos são permanentes. Conhecimento conectado gera valor.**
