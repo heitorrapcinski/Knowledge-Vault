@@ -12,6 +12,7 @@ source: ITIL Foundation (Version 5), PeopleCert, 2026
 author: PeopleCert
 created: 2026-07-25
 ---
+
 > [!abstract]
 > Sponsor é o papel do consumidor que autoriza o orçamento para o consumo do serviço.
 

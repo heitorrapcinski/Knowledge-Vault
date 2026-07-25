@@ -12,6 +12,7 @@ source: ITIL Foundation (Version 5), PeopleCert, 2026
 author: PeopleCert
 created: 2026-07-25
 ---
+
 > [!abstract]
 > Service Offering é a descrição formal de um ou mais serviços, desenhada para atender às necessidades de um grupo específico de consumidores.
 

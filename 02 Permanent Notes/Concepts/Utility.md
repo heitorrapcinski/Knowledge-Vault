@@ -13,6 +13,7 @@ source: ITIL Foundation (Version 5), PeopleCert, 2026
 author: PeopleCert
 created: 2026-07-25
 ---
+
 > [!abstract]
 > Utility é a funcionalidade de um serviço — o que ele faz. Responde se o serviço é *adequado ao propósito* (fit for purpose).
 

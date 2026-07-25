@@ -134,7 +134,9 @@ Como o dado deixa de caber em uma máquina só.
 - [[Two-Phase Commit]]
 - [[Saga]]
 - [[Outbox Pattern]]
+- [[Change Data Capture (CDC)]]
 - [[Data Pipeline]]
+- [[Single-Table Design]]
 
 ---
 
@@ -238,6 +240,7 @@ Como o software chega à produção.
 - [[Continuous Integration (CI)]]
 - [[Continuous Delivery (CD)]]
 - [[Serverless]]
+- [[Cold Start]]
 
 ---
 
@@ -255,6 +258,9 @@ Como o sistema é decomposto e como é mantido de pé.
 - [[High Availability]]
 - [[Disaster Recovery]]
 - [[Bounded Context]]
+- [[Hexagonal Architecture]]
+- [[Multi-Tenancy]]
+- [[FinOps]]
 - [[Strangler Fig]]
 - [[Arquitetura Evolutiva]]
 - [[Reverse Conway Maneuver]]
@@ -300,6 +306,7 @@ flowchart TD
 | [[Virtual Private Cloud (VPC)]] · [[Subnet]] · [[CIDR]] · [[Block Storage]] | Cluster de Cloud e infraestrutura |
 | [[Information Security Management]] · [[Identity Federation]] · [[Compliance]] · [[Risk Management]] | Cluster ITIL e segurança da informação |
 | [[Multi-Agent Systems]] · [[Agentic AI]] · [[Model Context Protocol (MCP)]] | Cluster de IA Generativa e Agentes |
+| [[Serverless]] · [[Cold Start]] · [[Multi-Tenancy]] · [[Single-Table Design]] · [[FinOps]] | [[AWS Serverless Architecture MOC]] — arquitetura canônica AWS serverless |
 
 ---
 
@@ -353,14 +360,15 @@ flowchart TD
 
 > [!question] Lacunas abertas deste domínio
 > - **Observabilidade em profundidade:** `OpenTelemetry`, `Métrica` como nota própria (hoje só citada nos três pilares) e `SLI/SLO aplicados a serviço`.
-> - **Dados:** `Change Data Capture`, `Data Mesh` e `Data Contract` — extensões naturais de [[Data Pipeline]].
+> - **Dados:** `Data Mesh` e `Data Contract` — extensões naturais de [[Data Pipeline]]. (`Change Data Capture` foi coberto por [[Change Data Capture (CDC)]].)
 > - **Entrega:** `Blue-Green Deployment`, `Canary Release` e `Feature Flag`, complementos diretos de [[Pipeline de CI-CD]].
-> - **Custo:** `FinOps` e `Cost-Aware Architecture`, ligando [[Cloud Native Anti-Patterns]] ao [[Cost]] do cluster ITIL.
+> - **Entrega e custo:** `Blue-Green Deployment`, `Canary Release` e `Feature Flag` seguem abertos; o eixo de custo foi coberto por [[FinOps]], que liga [[Cloud Native Anti-Patterns]] ao [[Service Financial Management]] do cluster ITIL.
 
 ---
 
 # Veja também
 
+- [[AWS Serverless Architecture MOC]]
 - [[AI Generative Architecture]]
 - [[Enterprise Architecture]]
 - [[ITIL 5]]

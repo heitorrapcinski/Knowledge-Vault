@@ -12,6 +12,7 @@ source: ITIL Foundation (Version 5), PeopleCert, 2026
 author: PeopleCert
 created: 2026-07-25
 ---
+
 > [!abstract]
 > Transfer of Goods é o componente de uma oferta de serviço em que a propriedade de um bem passa do provedor para o consumidor.
 

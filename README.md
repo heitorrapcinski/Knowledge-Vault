@@ -333,7 +333,7 @@ flowchart LR
 
 ## Estado Atual
 
-**338 notas permanentes** (283 Concepts + 55 Practices), organizadas em cinco clusters temáticos:
+**377 notas permanentes** (311 Concepts + 66 Practices), organizadas em seis clusters temáticos:
 
 | Cluster | Notas | Estado |
 |---|---:|---|
@@ -341,6 +341,7 @@ flowchart LR
 | **Cloud, Dados e Resiliência** | 24 | Denso e internamente coerente — Storage (Block/File/Object), DR/BC/RPO/RTO, Data Lake/Warehouse/ETL/ELT, padrões distribuídos |
 | **Lean Inception** | 24 | Completo — literatura (Paulo Caroli), 13 práticas de workshop, conceitos, MOC e estudo de caso |
 | **System Design e Sistemas Distribuídos** | 99 | Cluster mais recente — fundamentos (falhas independentes, consistência, consenso), distribuição de dados e tráfego, estilos de API e protocolos, segurança e identidade, cache e mensageria, resiliência, contêineres e Kubernetes, Cloud Native e observabilidade, mais o substrato de rede (OSI, TCP/UDP, DNS, VPC) e sistema operacional, concorrência e evolução arquitetural |
+| **AWS Serverless e SaaS Multi-Tenant** | 39 | Cluster mais recente — arquitetura canônica de produto SaaS sobre AWS serverless: serviços (Lambda, API Gateway, DynamoDB, Cognito, EventBridge, SQS, SNS, S3, CloudFront, Athena, CloudWatch, CDK), padrões (multi-tenancy, Single-Table Design, CDC, URL pré-assinada, cold start, hexagonal), camada PWA (service worker, cache, push, estado de servidor, fatias de funcionalidade) e governança (versionamento em três camadas, FinOps) |
 | **IA Generativa e Agentes** | 23 | Núcleo maduro (LLM, RAG, GraphRAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) ampliado pela camada de IA do ITIL 5 (Agentic AI, AI Capability Model, AI Governance, AIOps, Human-in-the-Loop) e pela camada multiagente (Multi-Agent Systems, hierarquia, especialistas, paralelos, ferramentas compartilhadas) |
 
 > [!info] Contagem por cluster é aproximada
@@ -352,12 +353,14 @@ flowchart LR
 - [[ITIL 5]] — gestão de produtos e serviços digitais, alinhado à publicação ITIL Foundation (Version 5)
 - [[Lean Inception MOC]] — workshop de definição de MVP
 - [[System Design MOC]] — sistemas distribuídos em dez eixos, do substrato de rede e sistema operacional à operação em produção
+- [[AWS Serverless Architecture MOC]] — arquitetura canônica de SaaS multi-tenant sobre AWS serverless com frontend PWA, em oito eixos
 
 ### Em construção
 
 - Padronização do frontmatter das notas antigas dos clusters Cloud e Lean Inception (faltam `source` e `author` em ~40 notas)
 - Notas de literatura do ITIL, a serem escritas **após** a leitura das publicações da Versão 5
-- Próximas lacunas mapeadas no [[System Design MOC]]: observabilidade em profundidade (OpenTelemetry, SLI/SLO aplicados), dados (CDC, Data Mesh, Data Contract), entrega (Blue-Green, Canary, Feature Flag) e custo (FinOps)
+- Próximas lacunas mapeadas no [[System Design MOC]]: observabilidade em profundidade (OpenTelemetry, SLI/SLO aplicados), dados (Data Mesh, Data Contract) e entrega (Blue-Green, Canary, Feature Flag) — CDC e FinOps foram fechadas pelo cluster AWS Serverless
+- Lacunas do [[AWS Serverless Architecture MOC]]: orquestração de fluxo longo, entrega progressiva, estratégia de teste para serverless, cotas como restrição de projeto e residência de dado
 
 > [!info] Sobre a promoção em massa para `evergreen`
 > Todas as notas foram promovidas a `evergreen` em uma decisão de curadoria única, e não nota a nota. As do cluster System Design foram escritas com fonte primária citada e links verificados; as do cluster ITIL e Lean Inception herdaram o status sem revisão individual e permanecem abertas a enriquecimento — como toda nota evergreen.
