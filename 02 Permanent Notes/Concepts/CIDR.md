@@ -49,6 +49,8 @@ Network["10.0"] --> Hosts["0.0 - 255.255"]
 
 ## Veja também
 
-- [[VPC]]
+- [[Virtual Private Cloud (VPC)]]
 - [[Subnet]]
-- [[Networking]]
+- [[Modelo OSI]]
+- [[Kubernetes (K8s)]]
+- [[System Design MOC]]

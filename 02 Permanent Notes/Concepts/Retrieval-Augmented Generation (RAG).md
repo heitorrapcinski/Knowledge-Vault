@@ -6,7 +6,7 @@ tags:
   - ai
   - generative-ai
   - rag
-type: permanent-note
+type: concept
 status: evergreen
 source: Meta AI (2020)
 author: ChatGPT

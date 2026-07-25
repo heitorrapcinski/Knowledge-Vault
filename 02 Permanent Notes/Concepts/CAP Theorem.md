@@ -39,6 +39,9 @@ AP
 
 ## Veja também
 
+- [[Database Sharding]]
+- [[Distributed Cache]]
+- [[System Design MOC]]
 - [[Distributed Systems]]
 - [[Eventual Consistency]]
 - [[Consensus]]

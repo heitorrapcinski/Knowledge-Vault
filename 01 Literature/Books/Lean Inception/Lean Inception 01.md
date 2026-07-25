@@ -6,6 +6,8 @@ tags:
   - foundation
 aliases:
   - "Parte 1: Construindo o Produto Certo"
+type: literature
+status: evergreen
 ---
 ## Parte 1: Construindo o Produto Certo
 

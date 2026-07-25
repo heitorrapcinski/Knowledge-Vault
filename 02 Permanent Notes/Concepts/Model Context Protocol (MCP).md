@@ -7,7 +7,7 @@ tags:
   - protocol
   - mcp
   - interoperability
-type: permanent-note
+type: concept
 status: evergreen
 source: Anthropic MCP Specification
 author: ChatGPT

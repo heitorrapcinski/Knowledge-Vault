@@ -1,6 +1,7 @@
 ---
 type: practice
 tags: [workshop, facilitation, alignment]
+status: evergreen
 ---
 Um workshop colaborativo que dura tipicamente **uma semana**, dividindo-se entre membros ativos e stakeholders.
 

@@ -1,6 +1,7 @@
 ---
-type: project-case
+type: project
 tags: [example, mvp-case]
+status: evergreen
 ---
 Este exemplo de **App para Peladeiros** demonstra o resultado de uma **Lean Inception** simplificada para um aplicativo mobile que ajuda a marcar partidas de futebol.
 

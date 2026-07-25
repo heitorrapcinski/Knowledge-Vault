@@ -49,6 +49,9 @@ HalfOpen --> Open : Falha
 
 ## Veja também
 
+- [[Microservices]]
+- [[Message Queue]]
+- [[System Design MOC]]
 - [[Retry Pattern]]
 - [[Bulkhead]]
 - [[Timeout]]

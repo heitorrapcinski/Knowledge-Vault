@@ -8,7 +8,7 @@ tags:
   - generative-ai
   - llm
   - concepts
-type: permanent-note
+type: concept
 status: evergreen
 source: OpenAI, Anthropic, Google DeepMind, Meta
 author: ChatGPT

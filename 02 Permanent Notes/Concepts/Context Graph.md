@@ -8,7 +8,7 @@ tags:
   - generative-ai
   - context
   - graph
-type: permanent-note
+type: concept
 status: evergreen
 source: Agentic AI, GraphRAG, AI Agent Architectures
 author: ChatGPT

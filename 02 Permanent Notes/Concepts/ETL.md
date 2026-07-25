@@ -39,6 +39,7 @@ Load --> DataWarehouse["Data Warehouse"]
 
 ## Veja também
 
+- [[Data Pipeline]]
 - [[ELT]]
 - [[Data Warehouse]]
 - [[Business Intelligence]]

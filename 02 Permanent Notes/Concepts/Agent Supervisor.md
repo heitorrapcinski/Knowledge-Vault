@@ -7,7 +7,7 @@ tags:
   - ai
   - agents
   - orchestration
-type: permanent-note
+type: concept
 status: evergreen
 source: Multi-Agent Systems
 author: ChatGPT

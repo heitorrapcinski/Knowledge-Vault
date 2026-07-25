@@ -6,7 +6,7 @@ tags:
   - ai
   - graph
   - knowledge
-type: permanent-note
+type: concept
 status: evergreen
 source: Google Knowledge Graph, Semantic Web
 author: ChatGPT

@@ -4,6 +4,7 @@ tags:
   - facilitation
   - focus
   - alignment
+status: evergreen
 ---
 O **Estacionamento de Ideias** (também conhecido como *Parking Lot*) é uma ferramenta de facilitação utilizada para arquivar temporariamente itens, ideias ou questões que surgem durante as atividades, mas que não são úteis para a discussão naquele momento específico.
 

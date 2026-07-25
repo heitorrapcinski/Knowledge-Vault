@@ -5,6 +5,7 @@ tags:
   - agile
 aliases:
   - Mínimo Produto Viável (MVP)
+status: evergreen
 ---
 O **MVP** é a versão mais simples de um produto que pode ser disponibilizada para validar um pequeno conjunto de hipóteses sobre o negócio.
 

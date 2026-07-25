@@ -9,7 +9,7 @@ tags:
   - generative-ai
   - agents
   - runtime
-type: permanent-note
+type: concept
 status: evergreen
 source: Literatura de IA Generativa e Frameworks de Agentes
 author: ChatGPT

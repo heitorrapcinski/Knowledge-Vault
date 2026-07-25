@@ -7,6 +7,8 @@ tags:
   - agile
   - product-management
   - mvp
+type: literature
+status: evergreen
 ---
 ## Resumo
 

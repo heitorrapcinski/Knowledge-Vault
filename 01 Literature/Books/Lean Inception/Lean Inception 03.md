@@ -6,6 +6,8 @@ tags:
   - execution
 aliases:
   - "Parte 3: Atividades da Lean Inception"
+type: literature
+status: evergreen
 ---
 ## Parte 3: Atividades da Lean Inception
 

@@ -65,6 +65,7 @@ DataLake --> BI
 
 ## Veja também
 
+- [[Data Pipeline]]
 - [[Object Storage]]
 - [[Data Warehouse]]
 - [[Storage]]

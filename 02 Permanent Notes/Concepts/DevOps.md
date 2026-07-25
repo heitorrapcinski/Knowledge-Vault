@@ -6,7 +6,7 @@ tags:
   - engineering
   - culture
 type: concept
-status: growing
+status: evergreen
 source: ITIL Foundation (Version 5), PeopleCert, 2026
 author: PeopleCert
 created: 2026-07-25

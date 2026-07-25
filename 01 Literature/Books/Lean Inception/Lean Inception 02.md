@@ -6,6 +6,8 @@ tags:
   - agile
 aliases:
   - "Parte 2: Preparando-se para o Workshop"
+type: literature
+status: evergreen
 ---
 ## Parte 2: Preparando-se para o Workshop
 

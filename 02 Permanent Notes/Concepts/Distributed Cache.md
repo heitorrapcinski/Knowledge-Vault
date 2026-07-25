@@ -22,6 +22,10 @@ Cache --> Database
 > [!tip]
 > O cache deve armazenar apenas dados que possam ser reconstruídos.
 
+A leitura em memória custa cerca de **100 ns** contra **100 µs** de um SSD — três ordens de grandeza (ver [[Latency Numbers]]). É essa diferença, e não um ajuste marginal, que muda o comportamento do sistema.
+
+Introduzir cache cria um segundo lugar onde a verdade mora: manter os dois em sincronia exige escolher explicitamente um padrão de leitura e um de escrita, descritos em [[Estratégias de Cache]].
+
 ## Benefícios
 
 - Alta performance
@@ -37,6 +41,10 @@ Cache --> Database
 
 ## Veja também
 
-- [[Caching]]
-- [[Redis]]
-- [[Performance]]
+- [[Estruturas de Dados]]
+
+- [[Estratégias de Cache]]
+- [[Latency Numbers]]
+- [[Content Delivery Network (CDN)]]
+- [[Database Index]]
+- [[System Design MOC]]

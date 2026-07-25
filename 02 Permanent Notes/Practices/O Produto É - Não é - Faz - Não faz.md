@@ -6,6 +6,7 @@ tags:
   - scoping
 aliases:
   - ENFN
+status: evergreen
 ---
 Esta atividade busca classificações sobre o produto para esclarecer sua identidade e escopo, sendo muitas vezes mais fácil descrever o que algo *não é* do que o que é.
 

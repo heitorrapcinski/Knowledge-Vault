@@ -7,7 +7,7 @@ tags:
   - ai
   - agents
   - runtime
-type: permanent-note
+type: concept
 status: evergreen
 source: Agentic AI Architectures
 author: ChatGPT

@@ -63,6 +63,7 @@ Responsável por fornecer conhecimento adicional ao modelo durante a execução.
 
 - [[Retrieval-Augmented Generation (RAG)]]
 - [[Knowledge Graph]]
+- [[GraphRAG]]
 
 ---
 
@@ -95,6 +96,7 @@ Responsável pela colaboração entre agentes especializados.
 
 ## Conceitos
 
+- [[Multi-Agent Systems]]
 - [[Hierarquia de Agentes]]
 - [[Agentes Especialistas]]
 - [[Agentes Paralelos]]
@@ -269,6 +271,7 @@ Multi-Agent Systems : Colaboração entre Agentes
 11. [[Agentes Paralelos]]
 12. [[Human-in-the-Loop]]
 13. [[Ferramentas Compartilhadas]]
+14. [[Multi-Agent Systems]]
 
 ---
 
@@ -279,3 +282,4 @@ Multi-Agent Systems : Colaboração entre Agentes
 - [[Multi-Agent Systems]]
 - [[GraphRAG]]
 - [[Enterprise Architecture]]
+- [[System Design MOC]]

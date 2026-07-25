@@ -7,7 +7,7 @@ tags:
   - operations
   - engineering
 type: concept
-status: growing
+status: evergreen
 source: ITIL Foundation (Version 5), PeopleCert, 2026
 author: PeopleCert
 created: 2026-07-25
@@ -23,11 +23,13 @@ Sistemas distribuídos falham de formas que ninguém antecipou, o que torna dash
 
 ## Pilares
 
-| Pilar | O que revela |
-|---|---|
-| **Logs** | O que aconteceu, em detalhe |
-| **Métricas** | Tendência agregada ao longo do tempo |
-| **Traces** | Caminho da requisição entre serviços |
+| Pilar | O que revela | Volume |
+|---|---|---|
+| **[[Logging]]** | O que aconteceu, em detalhe | Alto |
+| **[[Distributed Tracing]]** | Caminho da requisição entre serviços | Médio |
+| **Métricas** | Tendência agregada ao longo do tempo | Baixo |
+
+Em [[Microservices]] os três deixam de ser opcionais: nenhum log local contém a jornada completa de uma requisição, e é o trace que a reconstrói. **OpenTelemetry** é o framework que unifica os três pilares sob uma instrumentação única.
 
 ## Características
 
@@ -37,6 +39,10 @@ Sistemas distribuídos falham de formas que ninguém antecipou, o que torna dash
 
 ## Veja também
 
+- [[Logging]]
+- [[Distributed Tracing]]
+- [[Microservices]]
+- [[System Design MOC]]
 - [[Monitoring and Event Management]]
 - [[Site Reliability Engineering (SRE)]]
 - [[Service Level Indicator (SLI)]]

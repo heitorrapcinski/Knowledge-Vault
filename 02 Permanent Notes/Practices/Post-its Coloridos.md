@@ -1,6 +1,7 @@
 ---
 type: practice
 tags: [facilitation, tools, collaboration, creativity]
+status: evergreen
 ---
 O uso de **post-its ou cartões coloridos** é uma prática central na Lean Inception para promover a colaboração e a experimentação. Segundo o autor, a interação gerada por esse aparato simples é superior a qualquer alternativa digital.
 

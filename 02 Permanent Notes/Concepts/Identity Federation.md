@@ -39,6 +39,10 @@ Token --> Application
 
 ## Veja também
 
+- [[Single Sign-On (SSO)]]
+- [[OAuth 2.0]]
+- [[JSON Web Token (JWT)]]
+- [[System Design MOC]]
 - [[IAM]]
 - [[Authentication]]
 - [[Authorization]]

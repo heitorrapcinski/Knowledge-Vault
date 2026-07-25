@@ -1,6 +1,7 @@
 ---
 type: concept
 tags: [metrics, growth-hacking, marketing]
+status: evergreen
 ---
 O **AARRR** (também chamado de métricas de pirata) é um acrônimo criado por Dave McClure para compreender as interações do cliente com o produto.
 

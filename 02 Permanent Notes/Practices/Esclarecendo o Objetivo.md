@@ -1,6 +1,7 @@
 ---
 type: practice
 tags: [alignment, business-goals, prioritization]
+status: evergreen
 ---
 Esta atividade tem como propósito fazer com que cada membro da equipe compartilhe seu entendimento sobre os objetivos de negócio do produto. Através da discussão de diferentes pontos de vista, o grupo busca alcançar um **consenso** sobre o que é realmente prioritário para o sucesso do projeto.
 

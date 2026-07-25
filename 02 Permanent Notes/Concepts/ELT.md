@@ -33,6 +33,7 @@ DataLake --> Transform
 
 ## Veja também
 
+- [[Data Pipeline]]
 - [[ETL]]
 - [[Data Lake]]
 - [[Data Warehouse]]

@@ -63,6 +63,7 @@ DW --> Analytics["Analytics"]
 
 ## Veja também
 
+- [[Data Pipeline]]
 - [[Data Lake]]
 - [[ETL]]
 - [[ELT]]

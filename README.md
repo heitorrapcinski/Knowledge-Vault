@@ -107,8 +107,8 @@ E três estados de maturidade, no campo `status`:
 | `growing` | Em evolução. Conteúdo utilizável, mas com lacunas conhecidas ou links pendentes |
 | `evergreen` | Madura. Autossuficiente, conectada, revisada. Continua aberta a enriquecimento |
 
-> [!warning] Vocabulário em migração
-> Notas antigas ainda usam variações herdadas de sessões anteriores. A equivalência canônica é:
+> [!success] Vocabulário normalizado
+> A migração foi concluída: todas as notas usam os cinco `type` e os três `status` canônicos. A equivalência aplicada foi
 > `permanent-note` → `concept` · `project-case` → `project` · `status: permanent` → `evergreen` · `status: moc` → `evergreen`
 
 ---
@@ -333,14 +333,15 @@ flowchart LR
 
 ## Estado Atual
 
-**234 notas permanentes** (185 Concepts + 49 Practices), organizadas em quatro clusters temáticos:
+**338 notas permanentes** (283 Concepts + 55 Practices), organizadas em cinco clusters temáticos:
 
 | Cluster | Notas | Estado |
 |---|---:|---|
 | **ITIL (Version 5)** | ~180 | Cluster mais denso do vault — fundamentos, valor e cocriação, relacionamentos, experiência, estratégia, quatro dimensões, Product and Service Lifecycle, ITIL Value System, 7 princípios, fluxos de valor, as 34 práticas de gestão e governança de IA |
 | **Cloud, Dados e Resiliência** | 24 | Denso e internamente coerente — Storage (Block/File/Object), DR/BC/RPO/RTO, Data Lake/Warehouse/ETL/ELT, padrões distribuídos |
 | **Lean Inception** | 24 | Completo — literatura (Paulo Caroli), 13 práticas de workshop, conceitos, MOC e estudo de caso |
-| **IA Generativa e Agentes** | 17 | Núcleo maduro (LLM, RAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) ampliado pela camada de IA do ITIL 5 (Agentic AI, AI Capability Model, AI Governance, AIOps, Human-in-the-Loop) — faltam as notas restantes da camada multiagente |
+| **System Design e Sistemas Distribuídos** | 99 | Cluster mais recente — fundamentos (falhas independentes, consistência, consenso), distribuição de dados e tráfego, estilos de API e protocolos, segurança e identidade, cache e mensageria, resiliência, contêineres e Kubernetes, Cloud Native e observabilidade, mais o substrato de rede (OSI, TCP/UDP, DNS, VPC) e sistema operacional, concorrência e evolução arquitetural |
+| **IA Generativa e Agentes** | 23 | Núcleo maduro (LLM, RAG, GraphRAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) ampliado pela camada de IA do ITIL 5 (Agentic AI, AI Capability Model, AI Governance, AIOps, Human-in-the-Loop) e pela camada multiagente (Multi-Agent Systems, hierarquia, especialistas, paralelos, ferramentas compartilhadas) |
 
 > [!info] Contagem por cluster é aproximada
 > Notas-ponte pertencem a mais de um cluster por desenho. `Team Topologies` conta em ITIL e em arquitetura; `Agentic AI`, em ITIL e em IA.
@@ -350,13 +351,16 @@ flowchart LR
 - [[AI Generative Architecture]] — arquiteturas de IA em cinco camadas: raciocínio, conhecimento, contexto, execução e colaboração
 - [[ITIL 5]] — gestão de produtos e serviços digitais, alinhado à publicação ITIL Foundation (Version 5)
 - [[Lean Inception MOC]] — workshop de definição de MVP
+- [[System Design MOC]] — sistemas distribuídos em dez eixos, do substrato de rede e sistema operacional à operação em produção
 
 ### Em construção
 
-- Camada multiagente do cluster de IA: `Hierarquia de Agentes`, `Agentes Especialistas`, `Agentes Paralelos`, `Ferramentas Compartilhadas`, `Multi-Agent Systems`
-- Curadoria humana das notas do cluster ITIL: todas nasceram em `status: growing` e aguardam revisão para `evergreen`
 - Padronização do frontmatter das notas antigas dos clusters Cloud e Lean Inception (faltam `source` e `author` em ~40 notas)
 - Notas de literatura do ITIL, a serem escritas **após** a leitura das publicações da Versão 5
+- Próximas lacunas mapeadas no [[System Design MOC]]: observabilidade em profundidade (OpenTelemetry, SLI/SLO aplicados), dados (CDC, Data Mesh, Data Contract), entrega (Blue-Green, Canary, Feature Flag) e custo (FinOps)
+
+> [!info] Sobre a promoção em massa para `evergreen`
+> Todas as notas foram promovidas a `evergreen` em uma decisão de curadoria única, e não nota a nota. As do cluster System Design foram escritas com fonte primária citada e links verificados; as do cluster ITIL e Lean Inception herdaram o status sem revisão individual e permanecem abertas a enriquecimento — como toda nota evergreen.
 
 ### Convenção de desambiguação
 
