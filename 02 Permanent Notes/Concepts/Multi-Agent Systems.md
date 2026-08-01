@@ -54,3 +54,5 @@ Na análise da Anthropic sobre a avaliação BrowseComp, três fatores explicara
 - [[Agent Supervisor]]
 - [[Agent Runtime]]
 - [[AI Generative Architecture]]
+- [[Agentic Workflow]]
+- [[Plugin (AI Agent)]]

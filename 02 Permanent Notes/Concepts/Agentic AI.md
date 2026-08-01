@@ -38,3 +38,6 @@ Por isso o ITIL 5 trata governança de IA como área própria: agentes exigem li
 - [[Agent Runtime]]
 - [[ITIL AI Governance]]
 - [[Autonomous Operations]]
+- [[Agentic Workflow]]
+- [[Agentic Research]]
+- [[Claude Platform MOC]]

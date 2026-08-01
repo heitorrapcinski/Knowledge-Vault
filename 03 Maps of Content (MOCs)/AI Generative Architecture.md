@@ -275,11 +275,26 @@ Multi-Agent Systems : Colaboração entre Agentes
 
 ---
 
+# A camada de produto
+
+Este MOC descreve a arquitetura **por dentro** — como um sistema de IA generativa é construído. O uso dessas mesmas camadas do lado de quem trabalha com a ferramenta pronta está mapeado em [[Claude Platform MOC]]:
+
+| Camada daqui | Equivalente no produto |
+|---|---|
+| Raciocínio | [[Extended Thinking]], [[Context Window]], [[Constitutional AI]] |
+| Conhecimento | [[Project Workspace]], [[Enterprise Search]] |
+| Contexto | [[Agent Memory]], [[Connector]] |
+| Execução | [[Agent Skill]], [[Agentic Workflow]], [[Scheduled Task]] |
+| Colaboração | [[Claude Cowork]], [[Plugin (AI Agent)]] |
+
+---
+
 # Veja também
 
 - [[Artificial Intelligence]]
 - [[Agentic AI]]
 - [[Multi-Agent Systems]]
 - [[GraphRAG]]
+- [[Claude Platform MOC]]
 - [[Enterprise Architecture]]
 - [[System Design MOC]]

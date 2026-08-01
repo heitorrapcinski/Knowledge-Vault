@@ -59,3 +59,6 @@ LLM --> Response
 - [[Knowledge Graph]]
 - [[Context Graph]]
 - [[Model Context Protocol (MCP)]]
+- [[Context Window]]
+- [[Extended Thinking]]
+- [[Constitutional AI]]

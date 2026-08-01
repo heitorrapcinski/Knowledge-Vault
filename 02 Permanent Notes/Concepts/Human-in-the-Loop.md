@@ -37,3 +37,6 @@ O erro de desenho mais comum é o oposto do que se teme: não é automação dem
 - [[Agent Supervisor]]
 - [[Autonomous Operations]]
 - [[ITIL AI Governance]]
+- [[Agentic Workflow]]
+- [[Computer Use]]
+- [[AI Fluency]]

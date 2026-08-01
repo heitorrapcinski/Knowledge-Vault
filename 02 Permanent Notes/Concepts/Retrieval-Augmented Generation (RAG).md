@@ -57,3 +57,6 @@ LLM --> Resposta
 - [[Knowledge Graph]]
 - [[Context Graph]]
 - [[Model Context Protocol (MCP)]]
+- [[Project Workspace]]
+- [[Context Window]]
+- [[Enterprise Search]]

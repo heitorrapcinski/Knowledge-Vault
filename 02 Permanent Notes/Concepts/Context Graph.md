@@ -110,3 +110,5 @@ Ele permite que diferentes agentes trabalhem sobre o mesmo contexto sem depender
 - [[Retrieval-Augmented Generation (RAG)]]
 - [[Model Context Protocol (MCP)]]
 - [[Agent Runtime]]
+- [[Agent Memory]]
+- [[Context Window]]

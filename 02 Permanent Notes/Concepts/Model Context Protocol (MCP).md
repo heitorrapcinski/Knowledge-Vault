@@ -121,3 +121,6 @@ Isso reduz duplicação de integrações e simplifica a governança.
 - [[Knowledge Graph]]
 - [[Harness]]
 - [[Agent Runtime]]
+- [[Connector]]
+- [[Agent Skill]]
+- [[Claude Platform MOC]]
