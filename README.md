@@ -60,10 +60,14 @@ Knowledge-Vault/
 │   │       ├── <Nome do Livro>.md          # Índice do livro
 │   │       ├── <Nome do Livro> 01.md       # Capítulo/Parte 1
 │   │       └── <Nome do Livro> NN.md       # Capítulo/Parte N
-│   └── Courses/
-│       └── <Nome do Curso>/
-│           ├── <Nome do Curso>.md          # Índice do curso
-│           └── <Nome do Curso> NN.md       # Módulo N
+│   ├── Courses/
+│   │   └── <Nome do Curso>/
+│   │       ├── <Nome do Curso>.md          # Índice do curso
+│   │       └── <Nome do Curso> NN.md       # Módulo N
+│   └── Use Cases/
+│       └── <Nome da Biblioteca>/
+│           ├── <Nome da Biblioteca>.md     # Índice da coleção
+│           └── <Nome da Biblioteca> NN.md  # Bloco de leitura N
 │
 ├── 02 Permanent Notes/         # Conhecimento: o que ficou
 │   ├── Concepts/               # O que uma coisa É
@@ -78,7 +82,7 @@ Knowledge-Vault/
 
 | Pasta | Papel | Regra de entrada |
 |---|---|---|
-| **01 Literature** | Notas de fonte, presas ao material original | Uma nota por capítulo/parte/módulo + um índice por obra. Livros em `Books/`, treinamentos e cursos em `Courses/`. Nunca é reescrita depois — é o registro da leitura |
+| **01 Literature** | Notas de fonte, presas ao material original | Uma nota por capítulo/parte/módulo + um índice por obra. Livros em `Books/`, treinamentos e cursos em `Courses/`, bibliotecas web de casos de uso e documentação em `Use Cases/`. Nunca é reescrita depois — é o registro da leitura |
 | **02 Permanent Notes/Concepts** | Conceitos atômicos, independentes da fonte | Só entra o que tem valor **fora** do livro que o originou. Deve fazer sentido sozinho, meses depois |
 | **02 Permanent Notes/Practices** | Técnicas, dinâmicas, atividades executáveis | Descreve um *como fazer*: passos, regras, template. Se responde "o que é", é Concept |
 | **03 Maps of Content** | Índices navegáveis por domínio | Um MOC por domínio de estudo. Não contém conhecimento novo — organiza o que existe |
@@ -337,7 +341,7 @@ flowchart LR
 
 ## Estado Atual
 
-**460 notas permanentes** (388 Concepts + 72 Practices), organizadas em oito clusters temáticos:
+**469 notas permanentes** (392 Concepts + 77 Practices), organizadas em oito clusters temáticos:
 
 | Cluster | Notas | Estado |
 |---|---:|---|
@@ -347,7 +351,7 @@ flowchart LR
 | **System Design e Sistemas Distribuídos** | 99 | Cluster mais recente — fundamentos (falhas independentes, consistência, consenso), distribuição de dados e tráfego, estilos de API e protocolos, segurança e identidade, cache e mensageria, resiliência, contêineres e Kubernetes, Cloud Native e observabilidade, mais o substrato de rede (OSI, TCP/UDP, DNS, VPC) e sistema operacional, concorrência e evolução arquitetural |
 | **AWS Serverless e SaaS Multi-Tenant** | 39 | Cluster mais recente — arquitetura canônica de produto SaaS sobre AWS serverless: serviços (Lambda, API Gateway, DynamoDB, Cognito, EventBridge, SQS, SNS, S3, CloudFront, Athena, CloudWatch, CDK), padrões (multi-tenancy, Single-Table Design, CDC, URL pré-assinada, cold start, hexagonal), camada PWA (service worker, cache, push, estado de servidor, fatias de funcionalidade) e governança (versionamento em três camadas, FinOps) |
 | **OpenStack e Nuvem Privada** | 61 | Cluster mais recente — engenharia de nuvem privada IaaS a partir de *Mastering OpenStack* (Khedher, 2024): os serviços do ecossistema (Nova, Neutron, Keystone, Cinder, Swift, Manila, Glance, Placement, Horizon, Ceilometer/Gnocchi/Aodh, Magnum, Zun, Ironic, Octavia, Masakari, Watcher, Rally, OSProfiler, Kolla-Ansible), o substrato neutro (IaaS, control plane, hipervisor, flavor, overcommit, capacity planning), segregação e agendamento (AZ, host aggregate, cells, afinidade), disponibilidade (Galera, quorum queue, VRRP, DVR), rede definida por software (OVS, OVN, VXLAN, BGP) e estratégia de nuvem (híbrida, multi-cloud, bursting, lock-in) |
-| **Trabalho Assistido por IA (Claude Platform)** | 22 | Cluster mais recente — a camada de *produto* da IA generativa, a partir do curso Claude 101 (Anthropic Academy): fundamentos (Constitutional AI, janela de contexto, raciocínio estendido), interação e fluência (4D Framework, prompt em três camadas, iteração, evals), organização (Projects, Artifacts, Skills, memória), alcance (Connectors, MCP, Enterprise Search, Research, Computer Use) e delegação (fluxo agêntico, tarefas agendadas, plugins, Cowork e Claude Code) |
+| **Trabalho Assistido por IA (Claude Platform)** | 31 | Cluster mais recente — a camada de *produto* da IA generativa, a partir do curso Claude 101 (Anthropic Academy) e da biblioteca oficial de casos de uso do Cowork: fundamentos (Constitutional AI, janela de contexto, raciocínio estendido), interação e fluência (4D Framework, prompt em três camadas, iteração, especificação de entregável, escolha de modelo, evals), organização (Projects, Artifacts, Skills, memória), alcance (Connectors, MCP, Enterprise Search, Research, Computer Use), delegação (fluxo agêntico, acesso a pasta, plano revisável, observabilidade de sessão, auditoria contra regras, síntese multi-fonte) e escala (skill → agendamento → plugin, handoff entre superfícies) |
 | **IA Generativa e Agentes** | 23 | Núcleo maduro (LLM, RAG, GraphRAG, Knowledge Graph, Context Graph, MCP, Harness, Agent Runtime, Supervisor) ampliado pela camada de IA do ITIL 5 (Agentic AI, AI Capability Model, AI Governance, AIOps, Human-in-the-Loop) e pela camada multiagente (Multi-Agent Systems, hierarquia, especialistas, paralelos, ferramentas compartilhadas) |
 
 > [!info] Contagem por cluster é aproximada
@@ -361,7 +365,7 @@ flowchart LR
 - [[System Design MOC]] — sistemas distribuídos em dez eixos, do substrato de rede e sistema operacional à operação em produção
 - [[AWS Serverless Architecture MOC]] — arquitetura canônica de SaaS multi-tenant sobre AWS serverless com frontend PWA, em oito eixos
 - [[OpenStack MOC]] — nuvem privada IaaS em nove eixos, dos fundamentos e serviços do ecossistema à estratégia de nuvem híbrida
-- [[Claude Platform MOC]] — trabalho assistido por IA em cinco camadas: fundamentos, interação, organização do conhecimento, alcance às ferramentas e delegação de trabalho
+- [[Claude Platform MOC]] — trabalho assistido por IA em seis camadas: fundamentos, interação, organização do conhecimento, alcance às ferramentas, delegação de trabalho e escala do trabalho delegado
 
 ### Em construção
 
@@ -369,7 +373,7 @@ flowchart LR
 - Notas de literatura do ITIL, a serem escritas **após** a leitura das publicações da Versão 5
 - Próximas lacunas mapeadas no [[System Design MOC]]: observabilidade em profundidade (OpenTelemetry, SLI/SLO aplicados), dados (Data Mesh, Data Contract) e entrega (Blue-Green, Canary, Feature Flag) — CDC e FinOps foram fechadas pelo cluster AWS Serverless
 - Lacunas do [[AWS Serverless Architecture MOC]]: orquestração de fluxo longo, entrega progressiva, estratégia de teste para serverless, cotas como restrição de projeto e residência de dado
-- Lacunas do [[Claude Platform MOC]]: Cowork e Claude Code em profundidade (cursos dedicados), anatomia técnica de uma Skill, escrita de servidor MCP, *prompt injection* e defesa em agentes, economia de tokens, e evals rigorosos
+- Lacunas do [[Claude Platform MOC]]: Claude Code em profundidade (curso dedicado), governança de permissões no trabalho agêntico, anatomia técnica de uma Skill, escrita de servidor MCP, *prompt injection* e defesa em agentes, economia de tokens, e evals rigorosos — *Cowork em profundidade foi fechada pela leitura de [[Claude Cowork Use Cases]]*
 
 > [!info] Sobre a promoção em massa para `evergreen`
 > Todas as notas foram promovidas a `evergreen` em uma decisão de curadoria única, e não nota a nota. As do cluster System Design foram escritas com fonte primária citada e links verificados; as do cluster ITIL e Lean Inception herdaram o status sem revisão individual e permanecem abertas a enriquecimento — como toda nota evergreen.

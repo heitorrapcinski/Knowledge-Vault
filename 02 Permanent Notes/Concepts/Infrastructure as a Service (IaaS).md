@@ -26,15 +26,15 @@ O que define o modelo não é a virtualização — é o **pay-as-you-use** com 
 
 Quanto mais à direita, mais camadas sob responsabilidade do provedor:
 
-| Camada | On-premises | IaaS | PaaS | SaaS |
-|---|:-:|:-:|:-:|:-:|
-| Aplicação | você | você | você | provedor |
-| Dados | você | você | você | provedor |
-| Runtime | você | você | provedor | provedor |
-| Middleware | você | você | provedor | provedor |
-| Sistema operacional | você | você | provedor | provedor |
-| Virtualização | você | provedor | provedor | provedor |
-| Servidor, storage, rede | você | provedor | provedor | provedor |
+| Camada                  | On-premises |   IaaS   |   PaaS   |   SaaS   |
+| ----------------------- | :---------: | :------: | :------: | :------: |
+| Aplicação               |    você     |   você   |   você   | provedor |
+| Dados                   |    você     |   você   |   você   | provedor |
+| Runtime                 |    você     |   você   | provedor | provedor |
+| Middleware              |    você     |   você   | provedor | provedor |
+| Sistema operacional     |    você     |   você   | provedor | provedor |
+| Virtualização           |    você     | provedor | provedor | provedor |
+| Servidor, storage, rede |    você     | provedor | provedor | provedor |
 
 > [!important] Menos gestão significa menos controle
 > A troca é simétrica. Move-se para SaaS para reduzir o custo operacional; perde-se, na mesma medida, a capacidade de customizar a camada delegada. Ver [[Shared Responsibility Model]].
